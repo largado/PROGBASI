@@ -1,0 +1,20 @@
+' exemplo de sprites
+SCREEN 1, 1
+DATA 11111111
+DATA 11111111
+DATA 11111111
+DATA 11111111
+DATA 11111111
+DATA 11111111
+DATA 11111111
+DATA 11111111
+DATA 11111111
+RESTORE: s$ = ""
+FOR i = 1 TO 8
+READ b$
+b = VAL("&b" + b$)
+s$ = s$ + CHR$(b)
+NEXT i
+sprite$(1) = s$
+PUT sprite 1,(180,50),15,1
+

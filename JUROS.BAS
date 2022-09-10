@@ -1,0 +1,45 @@
+'AULA 2
+REM outra forma de usar comenario
+
+
+CLS
+
+SCREEN 0 ': WIDTH 38
+INPUT "taxa mensal"; taxa
+f = 1 + (t / 100)
+ta = f ^ 12
+td = f ^ (1 / 30)
+
+'emite um beep pela speaker
+BEEP
+
+PRINT "taxa mensal: ";
+PRINT USING "%##.##"; t
+
+
+REM EXEMPLO DE CAPTURA DE TECLA
+
+a$ = INPUT$(1)
+IF a$ = "N" THEN
+        PRINT "TECLA PRESSIONADA"
+END IF
+
+REM COLOCA O CURSOR NUMA DETERMINADA LINHA COLUNA
+a = 7
+l = 16
+
+LOCATE a, l
+
+REM USADO PARA DIMENSIONAR MATRIZ / ARRAY
+DIM a(N)
+
+REM EXEMPLO DE UM LACO FOR
+FOR I = a TO l
+      PRINT "VALOR DE I  "; I
+NEXT I
+
+
+REM COMECA A IMPRIMIR A PARTIR DE UMA DETERMINADA TABULACAO
+
+PRINT TAB(20); "ALEX TESTE SE IMPRIMIU A PARTIR DA TABULACAO 20"
+
